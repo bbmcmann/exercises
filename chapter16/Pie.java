@@ -12,7 +12,6 @@ public class Pie{
         weight = input.nextInt();
         if(weight >= 220 && weight <= 280 ){
             System.out.println("You are the proper weight.");
-
         }
         else{
             System.out.println("You cant enter bro");
