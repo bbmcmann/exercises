@@ -56,7 +56,7 @@ public class AgeInSeconds{
         else if (months == 12){
             totalDays += (31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 31);
         }
-
+        //would be easier to use loops here^
         System.out.println("Total days alive: " + totalDays);
         totalSeconds = totalDays * 24 * 60 * 60;
         System.out.println("Total seconds alive: " + totalSeconds);
