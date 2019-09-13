@@ -20,6 +20,7 @@ public class Game{
             health = 5;
             luck = 5;
         }
+        
 
         System.out.println("Health: " +  health + " Strength: " + strength + " Luck: " + luck);
         
