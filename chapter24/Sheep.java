@@ -7,8 +7,8 @@ public class Sheep{
         double power = 0.83;
 
         System.out.println(20);
-        
-        for(t = 0; t < 26; t++){
+
+        for(t = 1; t < 26; t++){
 
             
             System.out.println(Math.round(220/(1 + 10 * power)));
