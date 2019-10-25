@@ -10,6 +10,10 @@ public class Account{
         this.balance = balance;
     }
 
-    
+    public String toString(){
+        return "Name:\t\t\t" + name + 
+            "\nAccount no:\t\t" + accountNumber + 
+            "\nCurrent Balance:\t" + balance;
+    }
 
 }
