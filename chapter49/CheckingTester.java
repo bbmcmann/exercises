@@ -4,7 +4,7 @@ public class CheckingTester{
         
         Account testAccount = new Account("01282342834920234", "Bob", 12423);
 
-        System.out.println(testAccount.toString());
+        System.out.println(testAccount);
 
     }
 
