@@ -22,6 +22,10 @@ public class Account{
         return this.accountNumber;
     }
 
+    public void preocessDeposit(int deposit){
+        this.balance = balance + deposit;
+    }
+
     public String toString(){
         return "Name:\t\t\t" + name + 
             "\nAccount no:\t\t" + accountNumber + 
