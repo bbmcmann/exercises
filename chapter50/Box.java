@@ -19,6 +19,10 @@ class Box{
 
     }
 
+    public double volume(){
+        return width*height*length;
+    }
+
     
 
 }
