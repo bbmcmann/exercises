@@ -22,6 +22,12 @@ class Box{
 
     }
 
+    public Box(Box oldBox){
+        this.width = oldBox.getWidth();
+        this.height = oldBox.getHeight();
+        this.length = oldBox.getLength();
+    }
+
     public double getLength(){
         if(cube){
             return side;
@@ -64,6 +70,13 @@ class Box{
 
     public Box babyBox(Box oldBox){
         return new Box(0.25*oldBox.getWidth(), 0.25*oldBox.getHeight(), 0.25*oldBox.getLength());
+    }
+
+    public boolean nests(Box otherBox){
+        if(this.length < otherBox.getLength() && this.height < otherBox.getHeight() && this.width < otherBox.getWidth()){
+            return true;
+        }
+        return false;
     }
 
     private double facePairArea(double s1, double s2){
