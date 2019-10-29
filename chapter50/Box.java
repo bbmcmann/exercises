@@ -43,7 +43,7 @@ class Box{
         return this.width;
     }
 
-    public double surfaceArea(double s1, double s2){
+    public double surfaceArea(){
         return (facePairArea(width, height)) + (facePairArea(height, length)) + (facePairArea(length, width));
     }
 
@@ -55,7 +55,7 @@ class Box{
     }
 
     public String toString(){
-        return "";
+        return "SA: " + surfaceArea() + "\n" + "Volume: " + volume() + "\n" + "Length: " + length + " Width: " + width + " Height: " + height;
     }
 
     private double facePairArea(double s1, double s2){
