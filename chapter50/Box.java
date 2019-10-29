@@ -18,6 +18,9 @@ class Box{
     public Box(double side){
 
         this.side = side;
+        this.length = side;
+        this.height = side;
+        this.width = side;
         this.cube = true;
 
     }
