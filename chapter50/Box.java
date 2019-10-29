@@ -57,6 +57,14 @@ class Box{
     public String toString(){
         return "SA: " + surfaceArea() + "\n" + "Volume: " + volume() + "\n" + "Length: " + length + " Width: " + width + " Height: " + height;
     }
+    
+    public Box biggerBox(Box oldBox){
+        return new Box(1.25*oldBox.getWidth(), 1.25*oldBox.getHeight(), 1.25*oldBox.getLength());
+    }
+
+    public Box babyBox(Box oldBox){
+        return new Box(0.25*oldBox.getWidth(), 0.25*oldBox.getHeight(), 0.25*oldBox.getLength());
+    }
 
     private double facePairArea(double s1, double s2){
         return s1 * s2 * 2;

@@ -6,7 +6,7 @@ class BoxTester
      
     Box box = new Box(2.5,5.0,6.0);
 
-    System.out.println("");
+    System.out.println(box);
 
   }
 }
