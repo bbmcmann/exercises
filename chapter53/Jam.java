@@ -11,7 +11,7 @@ class Jam{
   }
 
   public boolean empty(){
-    return (capacity== 0 );
+    return (capacity == 0);
   }
 
   public String toString(){
