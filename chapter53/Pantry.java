@@ -12,11 +12,28 @@ class Pantry{
     selected = null;
   }
 
+  Pantry(Jam jar1, Jam jar2){
+    this.jar1 = jar1;
+    this.jar2 = jar2;
+    selected = null;
+  }
+
+  Pantry(Jam jar1){
+    this.jar1 = jar1;
+    selected = null;
+  }
+
   public String toString(){
     String str = "";
-    str += "1: " +  jar1.toString()  + "\n";
-    str += "2: " +  jar1.toString()  + "\n";
-    str += "3: " +  jar1.toString()  + "\n";     
+    if(jar1){
+        str += "1: " +  jar1.toString()  + "\n";
+    }
+    if(jar2){
+        str += "2: " +  jar1.toString()  + "\n";
+    }
+    if(jar3){
+        str += "3: " +  jar1.toString()  + "\n";  
+    }
     return str;
   }
 
