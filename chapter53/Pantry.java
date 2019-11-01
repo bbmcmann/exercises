@@ -1,3 +1,5 @@
+import sun.tools.jar.resources.jar;
+
 class Pantry{
 
   private Jam  jar1;
@@ -65,4 +67,12 @@ class Pantry{
         jar3 = j;
     }
   }
+
+  public void mixedFruit(){
+      if(jar1.getCapacity() <= 2 && jar2.getCapacity() <= 2 && jar3.getCapacity() <= 2){
+          jar1.setCapacity(jar2.getCapacity() + jar3.getCapacity());
+          jar1.setContents("Mixed Fruits");
+      }
+  }
+
 }

@@ -10,6 +10,18 @@ class Jam{
     capacity = size;
   }
 
+  public int getCapacity(){
+      return capacity;
+  }
+
+  public void setCapacity(int ammount){
+    capacity = ammount;
+  }
+
+  public void setContents(String newContents){
+      contents = newContents;
+  }
+
   public boolean empty(){
     return (capacity == 0);
   }
