@@ -53,4 +53,16 @@ class Pantry{
   public void spread(int oz){
     selected.spread(oz);
   }
+
+  public void replace(Jam j, int slot){
+    if(slot == 1){
+        jar1 = j;
+    }
+    else if(slot == 2){
+        jar2 = j;
+    }
+    else{
+        jar3 = j;
+    }
+  }
 }
