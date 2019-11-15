@@ -22,12 +22,13 @@ public class Odious{
 
     }
 
-    public static int findBinaryOnes(int number){
-        int numOfOnes = 0;
+    public static long findBinaryOnes(int number){
+        long numOfOnes = 0;
+        int remainder = 0;
 
         while(number != 0){
-            number = number % 2;
-            if(number == 1){
+            remainder = number % 2;
+            if(remainder == 1){
                 numOfOnes ++;
             }
             number = number/2;
