@@ -15,9 +15,11 @@ public class Combos{
     }
 
     public static long combinations(int n, int r){
+        if(n == r){
+            return 1;
+        }
         long factN = factorial(n);
         long factR = factorial(r);
-
         if(factN < 0 || factR < 0){
             return -1;
         }
