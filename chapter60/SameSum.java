@@ -14,8 +14,6 @@ class SameSum{
 
         System.out.println(Arrays.toString(valA));
         System.out.println(Arrays.toString(valB));
-
-        
     }
 
 
