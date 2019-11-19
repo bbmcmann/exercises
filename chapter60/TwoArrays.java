@@ -11,6 +11,10 @@ class TwoArrays{
 
         twice = new int[4];
 
+        for(int i = 0; i < 4; i++){
+            twice[i] = val[i] * 2;
+        }
+
         System.out.println(Arrays.toString(twice));
         
     }
