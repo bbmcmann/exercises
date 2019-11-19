@@ -8,7 +8,9 @@ class ThreeArrays{
         int[] valB = {-12,24,-79,-13};
         int[] sum = {0,0,0,0};
 
-        
+        for(int i = 0; i < 4; i++){
+            sum[i] = valA[i] + valB[i];
+        }
         
         System.out.println(Arrays.toString(sum));
     }
