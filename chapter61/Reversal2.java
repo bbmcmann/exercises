@@ -13,6 +13,7 @@ public class Reversal2{
         }
       
         System.out.println(Arrays.toString(data));
+        System.out.println(Arrays.toString(reversedData));
     }
 
 }
