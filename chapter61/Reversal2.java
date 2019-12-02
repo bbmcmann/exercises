@@ -11,7 +11,7 @@ public class Reversal2{
         for(int i = 0; i < data.length; i++){
             reversedData[i] = data[data.length-1-i];
         }
-      
+
         System.out.println(Arrays.toString(data));
         System.out.println(Arrays.toString(reversedData));
     }
