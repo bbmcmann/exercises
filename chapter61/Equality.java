@@ -4,9 +4,15 @@ import java.io.*;
 public class Equality{
 
     public static boolean myEquals(int[] a,int[] b){
-        boolean equal = true;
-
-        return equal;
+        if(a.length != b.length){
+            return false;
+        }
+        for(int i = 0; i < a.length; i ++){
+            if(a[i] != b[i]){
+                return false;
+            }
+        }
+        return true;
     }
     public static void main(String[] args) {
         int[] arrayA = { 1, 2, 3, 4 };
