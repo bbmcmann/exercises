@@ -8,5 +8,7 @@ public class WeightTester{
     
     System.out.println(june);
     System.out.println(june.average());
+    System.out.println(june.subAverage(0, values.length/2));
+    System.out.println(june.subAverage(values.length/2, values.length-1));
   }
 }      

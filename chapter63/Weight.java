@@ -21,6 +21,20 @@ class Weight{
         }
         return average/data.length;
     }
+
+    public int subAverage(int start, int end){
+        int average = 0;
+        if(start < end){
+            for(int i = start; i <= end; i++){
+                average += data[i];
+            }
+            return average/(end-start);
+        }
+        else{
+            return 0;
+        }
+        
+    }
     //Print
     public String toString(){
         return Arrays.toString(data);
