@@ -7,5 +7,6 @@ public class WeightTester{
     Weight june = new Weight(values);
     
     System.out.println(june);
+    System.out.println(june.average());
   }
 }      

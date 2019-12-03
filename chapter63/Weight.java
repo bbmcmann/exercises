@@ -14,6 +14,13 @@ class Weight{
       }
     }
     
+    public int average(){
+        int average = 0;
+        for(int i = 0; i < data.length; i++){
+            average += data[i]; 
+        }
+        return average/data.length;
+    }
     //Print
     public String toString(){
         return Arrays.toString(data);
